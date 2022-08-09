@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:text="1000"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:background="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/frame"
+        android:background="@drawable/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ru.stepashkin.androidslotmachine.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ru.stepashkin.androidslotmachine.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ru.stepashkin.androidslotmachine.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ru.stepashkin.androidslotmachine.ImageViewScrolling.ImageViewScrolling>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/button"
+        android:src="@drawable/button"
+        android:layout_width="205dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="300dp"
+
+         />
+
+</RelativeLayout>
